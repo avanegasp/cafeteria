@@ -4,11 +4,27 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color-red: #d03b40;
+    --color-beige: #ded6c0;
+    --color-white: #f5f0ed;
+    --color-grey: #241d1b;
+}
+
 .container{
     width: 90%;
     margin: auto;
     max-width: 1920px;
 }
+
+.container-two{
+    /* width: 90%; */
+    margin: auto;
+    max-width: 1920px;
+    /* margin-top: 10%; */
+    margin-bottom: 10%;
+}
+
 
 header{
     background-image: url(/images/Fondo1.jpg);
@@ -23,10 +39,9 @@ header{
 header label{
     display: none;
     width: 30px;
-    /* height: 30px; */
     padding: 10px;
     border-left: 1px solid red;
-    color: #fff;
+    color: var();
 }
 
 header label:hover{
@@ -35,7 +50,6 @@ header label:hover{
 }
 
 .menu ul{
-    /* margin: 0; */
     list-style: none;
     display: flex;
     float: right;
@@ -44,7 +58,7 @@ header label:hover{
 .menu ul li{
      display: block;
      padding: 15px 20px;
-     color: #fff;
+     color: var(--color-white);
      text-decoration: none;
 }
 
@@ -62,13 +76,13 @@ header label:hover{
 }
 
 .title h1{
-    color: #fff
+    color: var(--color-white);
 }
 
 h1:after{
     display: block;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--color-white);    ;
     width: 100px;
     margin: auto;
     margin-top: 30px;
@@ -82,7 +96,56 @@ h1:after{
 
 .text-header p {
     width: 38%;
-    color: #fff;
+    color: var(--color-white);
     margin-bottom: 17%;
     text-align: center;
+}
+
+/* section brunch */
+
+.brunch, .party{
+    height: 50vh;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.brunch{
+    background-color: var(--color-red);
+}
+
+.party{
+    background-color: var(--color-beige);
+}
+
+.brunch h2{
+    color: var(--color-beige);
+}
+
+.brunch p{
+    color: var(--color-beige);
+}
+
+.party h2{
+    color:var(--color-red);
+}
+
+.party p{
+    color:var(--color-red);
+}
+
+.brunch h2, .party h2{
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: 8%;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brunch p, .party p{
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
