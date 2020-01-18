@@ -17,15 +17,6 @@
     max-width: 1920px;
 }
 
-.container-two{
-    /* width: 90%; */
-    margin: auto;
-    max-width: 1920px;
-    /* margin-top: 10%; */
-    margin-bottom: 10%;
-}
-
-
 header{
     background-image: url(/images/Fondo1.jpg);
     background-repeat: no-repeat;
@@ -103,11 +94,15 @@ h1:after{
 
 /* section brunch */
 
+.come{
+    overflow: hidden;
+}
+
 .brunch, .party{
     height: 50vh;
     width: 50%;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .brunch{
@@ -148,4 +143,71 @@ h1:after{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Section breakfast */
+
+.breakfast{
+    background-image: url(/images/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-br{
+    /* margin-top: 17%; */
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-br h1{
+    color: var(--color-white);
+    overflow: hidden;
+    margin-top: 15%;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+h1:after{
+    display: block;
+    height: 2px;
+    background-color: var(--color-white);    ;
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+    content: "";
+}
+
+.text-header-br{
+    display: flex;
+    justify-content: center;
+}
+
+.text-header-br p {
+    width: 38%;
+    color: var(--color-white);
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.button-br{
+    display: flex;
+    justify-content: center;
+}
+
+.button-br button{
+    padding: 10px 30px;
+    margin-bottom: 150px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 5px solid var(--color-white);
+}
+
+.button-br button p{
+    text-transform: uppercase;
+    color: var(--color-white);
 }
