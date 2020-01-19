@@ -98,7 +98,7 @@ h1:after{
     overflow: hidden;
 }
 
-.brunch, .party{
+.brunch, .party, .party-two, .brunch-two{
     height: 50vh;
     width: 50%;
     float: left;
@@ -109,27 +109,51 @@ h1:after{
     background-color: var(--color-red);
 }
 
+.brunch-two{
+    background-color: var(--color-beige);
+}
+
 .party{
     background-color: var(--color-beige);
+}
+
+.party-two {
+    background-color: var(--color-red);
 }
 
 .brunch h2{
     color: var(--color-beige);
 }
 
+.brunch-two h2{
+    color: var(--color-red);
+}
+
 .brunch p{
     color: var(--color-beige);
+}
+
+.brunch-two p{
+    color: var(--color-red);
 }
 
 .party h2{
     color:var(--color-red);
 }
 
+.party-two h2{
+    color: var(--color-beige);
+}
+
 .party p{
     color:var(--color-red);
 }
 
-.brunch h2, .party h2{
+.party-two p{
+    color: var(--color-beige);
+}
+
+.brunch h2, .party h2, .brunch-two h2, .party-two h2{
     margin-top: 15%;
     text-align: center;
     margin-bottom: 8%;
@@ -138,7 +162,7 @@ h1:after{
     margin-right: auto;
 }
 
-.brunch p, .party p{
+.brunch p, .party p, .party-two p, .brunch-two p{
     text-align: center;
     width: 60%;
     margin-left: auto;
@@ -207,7 +231,70 @@ h1:after{
     border: 5px solid var(--color-white);
 }
 
-.button-br button p{
+.button-br button{
     text-transform: uppercase;
+    color: var(--color-white);
+}
+
+/* Ingredients section */
+
+.bread-candie{
+    overflow: hidden;
+}
+
+.ingredients-section{
+    overflow: hidden;
+}
+
+.bread-first{
+    display: flex;
+    /* margin-top: 50px; */
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.candies-first{
+    display: flex;
+    overflow: hidden;
+    /* margin-bottom: 50px; */
+}
+
+.text-bread, .text-candie{
+    margin-left: 20px;
+}
+
+.bread-part, .tarta-part, .candie-part, .ingredient-part{
+    display: flex;
+    width: 50%;
+}
+
+.text-candie p, .text-bread p{
+    text-align: justify;
+}
+
+.bread-part, .tarta-part{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.candie-part, .ingredient-part{
+    margin-bottom: 50px;
+}
+
+.bread-first p, .candies-first p{
+    text-align: justify;
+    width: 80%;
+    margin-top: 5px;
+    color: var(--color-grey);
+}
+
+/* footer section */
+
+footer{
+    background-color: var(--color-grey);
+    padding: 45px;
+}
+
+footer p{
     color: var(--color-white);
 }
