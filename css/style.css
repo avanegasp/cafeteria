@@ -44,6 +44,7 @@ header label:hover{
     list-style: none;
     display: flex;
     float: right;
+    margin-top: 10px;
 }
 
 .menu ul li{
@@ -298,3 +299,79 @@ footer{
 footer p{
     color: var(--color-white);
 }
+
+@media (max-width:768px){
+    .menu ul{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:480px){
+    .menu ul{
+        font-size: 10px;
+    }
+
+    .text-header p{
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .brunch, .party{
+        width: 100%;
+    }
+
+    .brunch h2, .party h2{
+        margin-top: 10%;
+    }
+
+    .title-br h1{
+        margin-top: 80px;
+        font-size: 40px;
+    }
+
+    .bread-first, .candies-first{
+        display: contents;
+    }
+
+    .bread-part, .tarta-part, .candie-part, .ingredient-part{
+        width: 100%;
+    }
+
+    .tarta-part{
+        margin-bottom: 80px;
+    }
+}
+    @media (max-width:320px){
+     .menu{
+         overflow: hidden;
+     }   
+
+     .menu ul{
+         display: contents;
+         font-size: 13px;
+     }
+
+     .title-br h1{
+         text-align: center;
+     }
+
+     .bread-part, .tarta-part, .candie-part, .ingredient-part{
+        display: contents;
+    }
+
+    .bread-img, .tarta-img, .candie-img, .ingredient-img{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .text-candie{
+        margin-bottom: 30px;
+    }
+
+    .brunch-two h2, .party-two h2{
+        width: 100%;
+    }
+    }
